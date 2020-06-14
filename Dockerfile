@@ -1,6 +1,6 @@
 FROM gcr.io/google.com/cloudsdktool/cloud-sdk:alpine
 
-RUN ["/bin/sh", "-c", "apk add --update --no-cache bash ca-certificates curl git jq openssh envsubst"]
+RUN ["/bin/sh", "-c", "apk add --update --no-cache bash ca-certificates curl git jq openssh gettext-base"]
 
 COPY ["src", "/src/"]
 
